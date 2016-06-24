@@ -1,7 +1,7 @@
 <ion-view view-title="Chats" hide-nav-bar="true" has-bouncing="false">
   <ion-content>
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" native-ui-sref="tab.chat-detail({chatId: chat.id})" native-options="{type: 'slide', direction: 'right'}">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" native-ui-sref="tab.chat-detail({chatId: chat.id})" native-options="{type: 'slide', direction: 'left'}">
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
         <p>{{chat.lastText}}</p>

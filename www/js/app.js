@@ -23,6 +23,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 })
 
+.config(function($ionicNativeTransitionsProvider){
+  $ionicNativeTransitionsProvider.setDefaultBackTransition({
+    type: 'slide',
+    direction: 'right'
+  });
+})
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
